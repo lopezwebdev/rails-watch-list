@@ -1,10 +1,16 @@
-<div class='container'>
-  <h1>Watch list</h1>
-  <%= link_to 'Make a New List', new_list_path   %>
-  <div class='cards'>
-    <% @lists.each do |list| %>
-    <div class='card-category'>
-    <%= link_to list.name, list_path(list)=%>
+<div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(https://res.cloudinary.com/dxkjh8nhh/image/upload/fl_preserve_transparency/v1731651321/l-intro-1628539252_iaimra.jpg?_s=public-apps);">
+  <div class="container">
+    <h1 class="white-text"><strong>Japanese Horror!</strong></h1>
+    <p class="white-text"><strong>Change your life one movie at a time.</strong></p>
   </div>
-  <% end %>
+</div>
+<div class="container">
+  <div class="cards my-3">
+    <% @lists.each do |list| %>
+      <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://res.cloudinary.com/dxkjh8nhh/image/upload/w_1000,ar_16:9,c_fill,g_auto,e_sharpen/v1731641292/MOVEF8245__58708.1679577849_x36q8l.jpg)">
+        <%= list.name %>
+      </div>
+    <% end %>
+  </div>
+  <%= link_to 'Add if you dare', new_list_path, class: "btn btn-ghost"%>
 </div>

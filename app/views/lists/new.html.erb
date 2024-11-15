@@ -1,0 +1,8 @@
+<div class="container py-5">
+  <h1>Add your favorite Japanese Horror Film</h1>
+  <%= simple_form_for @list do |f| %>
+    <%= f.input :name %>
+    <%= f.input :movie_photo, as: :file %>
+    <%= f.submit class: 'btn btn-success mt-2' %>
+  <% end %>
+</div>
