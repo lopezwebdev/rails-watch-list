@@ -1,0 +1,7 @@
+
+<div class="container my-3">
+    <% @list.bookmarks.each do |bookmark| %>
+        <%= bookmark.comment %>
+        <%= bookmark.movie_id  %>
+    <% end %>
+</div>
