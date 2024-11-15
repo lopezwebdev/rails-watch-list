@@ -4,8 +4,9 @@ class List < ApplicationRecord
 
   validates :name, presence:true, uniqueness: true
 
-   has_many :lists, through: :bookmarks
+  has_many :lists, through: :bookmarks
 
-   validates :name, presence:true, uniqueness: true
+  validates :name, presence:true, uniqueness: true
+  has_one_attached :photo
   #  validates :overview, presence:true
 end
