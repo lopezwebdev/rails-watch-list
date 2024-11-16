@@ -20,7 +20,7 @@
 </head>
 <div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(https://res.cloudinary.com/dxkjh8nhh/image/upload/fl_preserve_transparency/v1731651321/l-intro-1628539252_iaimra.jpg?_s=public-apps);">
   <div class="container" style="position: absolute; top: 0; left: 0; margin: 0.5rem;">
-    <h1 class="white-text horror-font"><strong>Japanese Horror</strong></h1>
+    <h1 class="red-text horror-font"><strong>Japanese Horror</strong></h1>
     <p class="white-text">Change your life one movie at a time</p>
     <%= link_to 'Click me', new_list_path, class: "btn btn-dark" %>
   </div>
@@ -28,7 +28,20 @@
 <div class="container">
   <div class="cards my-3">
     <% @lists.each do |list| %>
-      <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://res.cloudinary.com/dxkjh8nhh/image/upload/v1731717578/image_hjtdw6.gif)">
+      <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://res.cloudinary.com/dxkjh8nhh/image/upload/v1731753744/hqdefault_gla2ml.jpg)">
         <%= list.name %>
       </div>
     <% end %>
+  </div>
+</div>
+<div class="cards my-3 mx-3">
+  <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://res.cloudinary.com/dxkjh8nhh/image/upload/v1731717578/image_hjtdw6.gif)">
+    Number #1 (Ringu)
+  </div>
+  <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://res.cloudinary.com/dxkjh8nhh/image/upload/v1731767302/deb89589857c5cbc86e603772b3cbfe8_lrkvax.gif)">
+    Number #2 (Audition)
+  </div>
+  <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://res.cloudinary.com/dxkjh8nhh/image/upload/v1731767744/scary-thegrudge_qykq1l.gif">
+    Number #3 (Ju On)
+  </div>
+</div>
