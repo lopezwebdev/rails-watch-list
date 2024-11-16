@@ -1,8 +1,71 @@
-<div class="container py-5">
-  <h1>Add your favorite Japanese Horror Film</h1>
-  <%= simple_form_for @list do |f| %>
-    <%= f.input :name %>
-    <%= f.input :movie_photo, as: :file %>
-    <%= f.submit class: 'btn btn-success mt-2' %>
-  <% end %>
-</div>
+<head>
+  <link href="https://fonts.googleapis.com/css2?family=Creepster&display=swap" rel="stylesheet">
+  <style>
+    .horror-font {
+    font-family: 'Creepster', cursive;
+    }
+    html, body {
+      margin: 0;
+      height: 100vh; /* Full viewport height */
+      background: linear-gradient(to bottom, black,red,black); /* Black to Red Gradient */
+    }
+    html, body {
+      height: 100%;
+    }
+
+    .container {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+    {
+      height: 100%;
+    }
+
+    body {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .container {
+      flex-grow: 1;
+    }
+
+    .footer-links {
+      text-align: center;
+    }
+
+    .footer-links i {
+      color: white; /* Make the icons white */
+    }
+
+    footer {
+      text-align: center;
+      background-color: #333;
+      color: white;
+      padding: 10px 0;
+    }
+  </style>
+</head>
+<body>
+  <div class="container py-5 white-text">
+    <h1 class="white-text horror-font">Add your favorite here</h1>
+    <%= simple_form_for @list do |f| %>
+      <%= f.input :name %>
+      <%= f.input :movie_photo, as: :file %>
+      <%= f.submit class: 'btn btn-dark mt-2' %>
+    <% end %>
+    <div class="container d-flex flex-column justify-content-center align-items-center">
+      <div class="footer-links d-flex justify-content-center">
+        <a href="#" class="mx-2"><i class="fab fa-github"></i></a>
+        <a href="#" class="mx-2"><i class="fab fa-instagram"></i></a>
+        <a href="#" class="mx-2"><i class="fab fa-facebook"></i></a>
+        <a href="#" class="mx-2"><i class="fab fa-twitter"></i></a>
+        <a href="#" class="mx-2"><i class="fab fa-linkedin"></i></a>
+      </div>
+      <div class="footer-copyright mt-3">
+        <!-- Add footer copyright text here -->
+        © 2024 Japanese Horror
+      </div>
+    </div>
+  </body>

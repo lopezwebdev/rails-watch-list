@@ -6,9 +6,15 @@
     }
     .btn {
       position: absolute;  /* Position the button relative to the .banner */
-      bottom: -170px;  /* 20px from the bottom of the banner */
+      bottom: -160px;  /* 20px from the bottom of the banner */
       left: 10px;    /* 20px from the left of the banner */
       padding: 10px 20px;
+    }
+    html, body {
+      margin: 0;
+      height: 100vh; /* Full viewport height */
+      background: linear-gradient(to bottom, black, rgba(255,0,0,1), black);
+
     }
   </style>
 </head>
@@ -26,6 +32,3 @@
         <%= list.name %>
       </div>
     <% end %>
-  </div class ="text-left">
-  <%= link_to 'Click me', new_list_path, class: "btn btn-dark" %>
-</div>
